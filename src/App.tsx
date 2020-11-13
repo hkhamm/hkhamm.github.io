@@ -10,7 +10,7 @@ const useStyles = createUseStyles({
         height: "40vmin",
         pointerEvents: "none",
     },
-    "@media (preferes-reduced-motion): no-preference": {
+    "@media (prefers-reduced-motion: no-preference)": {
         appLogo: {
             animation: "App-logo-spin infinite 20s linear",
         },
