@@ -9,7 +9,7 @@
 /coverage
 
 # production
-/build
+# /build deploy from this on github pages
 
 # misc
 .DS_Store
