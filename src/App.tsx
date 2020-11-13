@@ -1,20 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { createUseStyles } from "react-jss";
+import React from "react"
+import logo from "./logo.svg"
+import { createUseStyles } from "react-jss"
 
 const useStyles = createUseStyles({
-    app:  {
-        textAlign: "center"
+    app: {
+        textAlign: "center",
     },
     appLogo: {
         height: "40vmin",
-        pointerEvents: "none"
+        pointerEvents: "none",
     },
     "@media (preferes-reduced-motion): no-preference": {
         appLogo: {
-            animation: "App-logo-spin infinite 20s linear"
-        }
+            animation: "App-logo-spin infinite 20s linear",
+        },
     },
     appHeader: {
         backgroundColor: "#282c34",
@@ -24,19 +23,19 @@ const useStyles = createUseStyles({
         alignItems: "center",
         justifyContent: "center",
         fontSize: "calc(10px + 2vmin)",
-        color: "white"
+        color: "white",
     },
     appLink: {
-        color: "#61dafb",    
+        color: "#61dafb",
     },
     "@keyframes App-logo-spin": {
         from: {
-            transform: "rotate(0deg)"
+            transform: "rotate(0deg)",
         },
         to: {
-            transform: "rotate(360deg)"
-        }
-    }
+            transform: "rotate(360deg)",
+        },
+    },
 })
 
 function App() {
@@ -46,15 +45,10 @@ function App() {
             <header className={classes.appHeader}>
                 <img src={logo} className={classes.appLogo} alt="logo" />
                 <p>
-                Edit <code>src/App.tsx</code> and save to reload.
+                    Edit <code>src/App.tsx</code> and save to reload.
                 </p>
-                <a
-                className={classes.appLink}
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                Learn React
+                <a className={classes.appLink} href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
+                    Learn React
                 </a>
             </header>
         </div>
