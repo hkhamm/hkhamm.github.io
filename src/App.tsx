@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import logo from "./logo.svg";
 import { createUseStyles } from "react-jss";
 
@@ -38,7 +38,7 @@ const useStyles = createUseStyles({
   },
 });
 
-function App() {
+const App: FC = () => {
   const classes = useStyles();
   return (
     <div className={classes.app}>
@@ -58,6 +58,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
