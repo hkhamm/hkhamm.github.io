@@ -17,6 +17,7 @@ function App() {
       >
         Install app
       </Link>
+      <br />
       <Link href="daimlertechassist://home">Open app</Link>
     </div>
   )
