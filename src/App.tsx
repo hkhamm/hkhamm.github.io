@@ -1,4 +1,4 @@
-import { Link } from "@mui/material"
+import { Link, Typography } from "@mui/material"
 
 function App() {
   return (
@@ -6,18 +6,21 @@ function App() {
       style={{
         height: "100vh",
         display: "flex",
+        flexDirection: "column",
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
       }}
     >
+      <Typography style={{ fontWeight: "bold", marginBottom: 48 }}>
+        Daimler TechAssist
+      </Typography>
       <Link
-        style={{ marginBottom: "48" }}
+        style={{ marginBottom: 48 }}
         href="itms-services://?action=download-manifest&url=https://hkhamm.com/app.plist"
       >
         Install app
       </Link>
-      <br />
       <Link href="daimlertechassist://home">Open app</Link>
     </div>
   )
