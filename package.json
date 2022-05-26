@@ -9,6 +9,9 @@
   },
   "dependencies": {
     "@20i/eslint-config": "^2.0.3",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.8.1",
     "eslint": "^8.16.0",
     "prettier": "^2.6.2",
     "react": "^18.0.0",

@@ -1,14 +1,23 @@
+import { Link } from "@mui/material"
+
 function App() {
   return (
     <div
       style={{
+        height: "100vh",
         display: "flex",
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
       }}
     >
-      <a href="daimlertechassist://home">Open app</a>
+      <Link
+        style={{ marginBottom: "48" }}
+        href="itms-services://?action=download-manifest&url=https://hkhamm.com/app.plist"
+      >
+        Install app
+      </Link>
+      <Link href="daimlertechassist://home">Open app</Link>
     </div>
   )
 }
