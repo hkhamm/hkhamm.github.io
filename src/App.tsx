@@ -1,4 +1,6 @@
 import { Link, Typography } from "@mui/material"
+import InstallApp from "./install_app.png"
+import OpenApp from "./open_app.png"
 
 function App() {
   return (
@@ -15,13 +17,20 @@ function App() {
       <Typography style={{ fontWeight: "bold", marginBottom: 48 }}>
         Daimler TechAssist
       </Typography>
-      <Link
-        style={{ marginBottom: 48 }}
-        href="itms-services://?action=download-manifest&url=https://hkhamm.com/app.plist"
-      >
+      <Link href="itms-services://?action=download-manifest&url=https://hkhamm.com/app.plist">
         Install app
       </Link>
+      <img
+        src={InstallApp}
+        style={{ height: 300, width: 300, marginBottom: 48 }}
+        alt="Install app qr code"
+      />
       <Link href="daimlertechassist://home">Open app</Link>
+      <img
+        src={OpenApp}
+        style={{ height: 300, width: 300 }}
+        alt="Open app qr code"
+      />
     </div>
   )
 }
