@@ -25,7 +25,7 @@ function App() {
         style={{ height: 300, width: 300, marginBottom: 48 }}
         alt="Install app qr code"
       />
-      <Link href="daimlertechassist://photo/8928">Open app</Link>
+      <Link href="dtnatechassist://photo/8972">Open app</Link>
       <img
         src={OpenApp}
         style={{ height: 300, width: 300 }}
