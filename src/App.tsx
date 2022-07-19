@@ -1,5 +1,6 @@
 import { Link, Typography } from "@mui/material"
-import InstallApp from "./install_app.png"
+import InstallProd from "./install_prod.png"
+import InstallQA from "./install_qa.png"
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         Install prod app
       </Link>
       <img
-        src={InstallApp}
+        src={InstallProd}
         style={{ height: 300, width: 300, marginBottom: 48 }}
         alt="Install prod app qr code"
       />
@@ -28,7 +29,7 @@ function App() {
         Install QA app
       </Link>
       <img
-        src={InstallApp}
+        src={InstallQA}
         style={{ height: 300, width: 300 }}
         alt="Install qa app qr code"
       />
